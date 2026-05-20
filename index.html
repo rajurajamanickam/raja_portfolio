@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rajamanickam R - Senior Front-End Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> 
+</head>
+<body>
+
+<!-- ══════════ FULLSCREEN MENU OVERLAY ══════════ -->
+<div id="fullscreenMenu">
+  <button id="closeMenuBtn" aria-label="Close menu" style="
+    position:absolute;top:24px;right:28px;background:none;border:none;cursor:pointer;
+    width:44px;height:44px;display:flex;align-items:center;justify-content:center;z-index:10;">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="4" y1="4" x2="24" y2="24" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="24" y1="4" x2="4" y2="24" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <ul class="fs-nav-list">
+    <li><a href="#hero"         class="fs-link">Home</a></li>
+    <li><a href="#about"        class="fs-link">About Me</a></li>
+    <li><a href="#services"     class="fs-link">What I Do</a></li>
+    <li><a href="#resume"       class="fs-link">Resume</a></li>
+    <li><a href="#achievements" class="fs-link">Achievements</a></li>
+    <li><a href="#contact"      class="fs-link">Contact Me</a></li>
+  </ul>
+  <div class="fs-social">
+    <a href="mailto:rajamanickam.dev@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/rajamanickamraju/" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
+  </div>
+</div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav id="mainNav">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Rajamanickam R" /></a>
+    <div class="d-flex align-items-center gap-4">
+      <a href="tel:9965914107" class="nav-phone d-none d-sm-inline"><i class="fas fa-phone-alt"></i>+91 99659 14107</a>
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 fade-up">
+        <p class="hero-subtitle mb-2">Hi, I'm a Senior Front-End Developer</p>
+        <h1 class="mb-3">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </h1>
+        <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Based in Chennai, India.</p>
+        <div class="d-flex gap-3 flex-wrap mt-4">
+          <a href="#resume" class="btn btn-yellow">View My Resume</a>
+          <a href="#contact" class="btn btn-outline-dark-custom">Contact Me</a>
+        </div>
+      </div>
+      <div class="col-lg-5 mt-5 mt-lg-0 text-center fade-up" style="transition-delay:.2s">
+        <div class="hero-img-wrap">
+          <img src="assets/raja.jpg" alt="Rajamanickam R" />
+          <div class="hero-badge">15+<br>Years<br>Exp.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">About Me</span>
+      <h2 class="section-title">Know Me More</h2>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-8 fade-up">
+        <h3 class="mb-3" style="font-size:1.6rem;">Hi, I'm <span style="color:var(--yellow)">Rajamanickam R</span></h3>
+        <p style="color:#666;line-height:1.9;font-size:.95rem;">
+          Accomplished Senior Front-End Developer with 15+ years of hands-on experience building scalable, high-performance, and visually engaging web applications for global clients. Expert in Angular, React, TypeScript, HTML5, CSS3, and UI/UX design, with a proven record of creating responsive, accessible, and cross-browser-compatible interfaces. Passionate about writing clean, maintainable, and testable front-end code while staying current with modern JavaScript frameworks and UI trends.
+        </p>
+        <div class="about-detail mt-4">
+          <div class="about-detail-item">
+            <span>Name</span>
+            <span>Rajamanickam R</span>
+          </div>
+          <div class="about-detail-item">
+            <span>Email</span>
+            <span><a href="mailto:rajamanickam.dev@gmail.com">rajamanickam.dev@gmail.com</a></span>
+          </div>
+          <div class="about-detail-item">
+            <span>Phone</span>
+            <span><a href="tel:9965914107">+91 99659 14107</a></span>
+          </div>
+          <div class="about-detail-item">
+            <span>Location</span>
+            <span>Chennai, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center fade-up" style="transition-delay:.15s">
+        <div class="about-stat-num"><span class="about-stat-num counter" data-target="15">0</span>+</div>
+        <div class="about-stat-label mt-1">Years of Experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section id="services">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">What I Do?</span>
+      <h2 class="section-title">How I Can Elevate Your Project</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fab fa-angular"></i></div>
+          <h5>Angular Development</h5>
+          <p>Building enterprise-grade Angular applications with modular architecture, lazy loading, and reusable component libraries that scale.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.1s">
+        <div class="service-card">
+          <div class="service-icon"><i class="fab fa-react"></i></div>
+          <h5>React Development</h5>
+          <p>Crafting performant React UIs with clean component design, state management, and TypeScript-first development practices.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.2s">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h5>UI/UX Design</h5>
+          <p>Translating Figma & Adobe XD designs into pixel-perfect, accessible interfaces that delight users across all devices and screen sizes.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.05s">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-universal-access"></i></div>
+          <h5>Accessibility (WCAG)</h5>
+          <p>Implementing ARIA attributes and WCAG 2.1 standards to ensure inclusive, compliant web experiences for all users.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.15s">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <h5>Performance Optimization</h5>
+          <p>Boosting application speed through lazy loading, code splitting, component caching, and advanced bundling techniques — up to 45% faster.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.25s">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-infinity"></i></div>
+          <h5>CI/CD & DevOps</h5>
+          <p>Configuring Azure DevOps and Jenkins pipelines for automated front-end builds, deployments, and security scans with Snyk.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ RESUME ══════════ -->
+<section id="resume">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">Resume</span>
+      <h2 class="section-title">A Summary of My Resume</h2>
+    </div>
+    <div class="row">
+      <!-- Education -->
+      <div class="col-md-6 fade-up">
+        <span class="resume-col-title">My Education</span>
+        <div class="resume-item">
+          <span class="resume-date">Vel Multi Tech SRS Engineering College | 2005 – 2008</span>
+          <h5>Master of Computer Applications (MCA)</h5>
+          <p class="company">Chennai, India</p>
+          <p>First Class — 74%. Specialised in software engineering, data structures, and application development.</p>
+        </div>
+        <div class="resume-item">
+          <span class="resume-date">K.S.R College of Technology | 2002 – 2005</span>
+          <h5>B.Sc. Information Technology</h5>
+          <p class="company">Tiruchengode, India</p>
+          <p>First Class — 69%. Built a strong foundation in computer science, networking, and programming fundamentals.</p>
+        </div>
+      </div>
+      <!-- Experience -->
+      <div class="col-md-6 fade-up" style="transition-delay:.15s">
+        <span class="resume-col-title">My Experience</span>
+        <div class="resume-item">
+          <span class="resume-date">Fint Solutions Pvt. Ltd. | Sep 2021 – Present</span>
+          <h5>Senior UI Developer</h5>
+          <p class="company">Chennai, India</p>
+          <p>Led Angular 16 modernisation, upgraded legacy Angular 8 app improving rendering by 30%, designed reusable components reducing duplicate code by 40%, and mentored junior developers.</p>
+        </div>
+        <div class="resume-item">
+          <span class="resume-date">Sify Technologies Pvt. Ltd. | May 2013 - Aug 2021</span>
+          <h5>Assistant Manager - Creative (UI Development)</h5>
+          <p class="company">Chennai, India</p>
+          <p>Developed the Digital Sales Portal using Angular 10 + Node.js, delivered 3 Ionic mobile apps with 50K+ downloads and 4.5+ ratings, and improved app performance by 45%.</p>
+        </div>
+        <!-- <div class="resume-item">
+          <span class="resume-date">FHAPL Technologies | Dec 2010 – May 2013</span>
+          <h5>Web Designer / Front-End Developer</h5>
+          <p class="company">Chennai, India</p>
+          <p>Delivered responsive, SEO-friendly websites using HTML5, CSS3, JavaScript, and jQuery. Improved page load speed by 20% through CSS refactoring and image optimisation.</p>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="row mt-5 fade-up">
+      <h4 class="mb-4" style="font-size:1.2rem;letter-spacing:1px;text-transform:uppercase;">My Skills</h4>
+      <div class="col-md-6">
+        <div class="skill-label"><span>Angular</span><span>95%</span></div>
+        <div class="progress"><div class="progress-bar" data-width="95" style="width:0"></div></div>
+        <div class="skill-label"><span>TypeScript / JavaScript</span><span>92%</span></div>
+        <div class="progress"><div class="progress-bar" data-width="92" style="width:0"></div></div>
+        <div class="skill-label"><span>HTML5 &amp; CSS3 / SASS</span><span>95%</span></div>
+        <div class="progress"><div class="progress-bar" data-width="95" style="width:0"></div></div>
+        <div class="skill-label"><span>React</span><span>80%</span></div>
+        <div class="progress"><div class="progress-bar" data-width="80" style="width:0"></div></div>
+      </div>
+      <div class="col-md-6">
+        <div class="skill-label"><span>Figma / Adobe XD / UI Design</span><span>88%</span></div>
+        <div class="progress"><div class="progress-bar" data-width="88" style="width:0"></div></div>
+        <div class="skill-label"><span>Azure DevOps / Jenkins CI/CD</span><span>82%</span></div>
+        <div class="progress"><div class="progress-bar" data-width="82" style="width:0"></div></div>
+        <div class="skill-label"><span>Bootstrap / Material UI / PrimeNG</span><span>90%</span></div>
+        <div class="progress"><div class="progress-bar" data-width="90" style="width:0"></div></div>
+        <div class="skill-label"><span>Accessibility (WCAG / ARIA)</span><span>85%</span></div>
+        <div class="progress"><div class="progress-bar" data-width="85" style="width:0"></div></div>
+      </div>
+    </div>
+
+    <div class="download-cv-wrap fade-up">
+      <a href="assets/Rajamanickam_Resume.pdf" target="_blank" class="btn btn-yellow"> Download CV <i class="fas fa-download ms-2"></i> </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ACHIEVEMENTS ══════════ -->
+<section id="achievements">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">Achievements</span>
+      <h2 class="section-title">Key Career Highlights</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 fade-up">
+        <div class="achievement-card">
+          <h6><i class="fas fa-rocket me-2" style="color:var(--yellow)"></i>Angular 8 → 16 Migration</h6>
+          <p>Led zero-downtime upgrade at Fint Solutions, boosting rendering performance by 30% across all enterprise modules.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.1s">
+        <div class="achievement-card">
+          <h6><i class="fas fa-layer-group me-2" style="color:var(--yellow)"></i>UI Component Libraries</h6>
+          <p>Standardised reusable UI libraries, cutting duplicate code by 40% and significantly accelerating delivery cycles.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.2s">
+        <div class="achievement-card">
+          <h6><i class="fas fa-mobile-alt me-2" style="color:var(--yellow)"></i>50K+ Mobile App Downloads</h6>
+          <p>Launched Sify Bawarchi, Samachar &amp; Sports apps with 50,000+ downloads and 4.5+ ratings on app stores.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.05s">
+        <div class="achievement-card">
+          <h6><i class="fas fa-tachometer-alt me-2" style="color:var(--yellow)"></i>45% Performance Boost</h6>
+          <p>Optimised Sify.com portal load time by 45% through lazy loading, component caching, and bundling techniques.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.15s">
+        <div class="achievement-card">
+          <h6><i class="fas fa-universal-access me-2" style="color:var(--yellow)"></i>WCAG 2.1 Champion</h6>
+          <p>Championed accessibility standards across all projects, improving inclusivity and regulatory compliance.</p>
+        </div>
+      </div>
+      <div class="col-md-4 fade-up" style="transition-delay:.25s">
+        <div class="achievement-card">
+          <h6><i class="fas fa-trophy me-2" style="color:var(--yellow)"></i>Best Performer Award 2019</h6>
+          <p>Recognised at Sify Technologies for delivery excellence and innovation in front-end architecture and performance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<!-- <section id="cta">
+  <div class="container fade-up">
+    <h2>Interested in Working Together?</h2>
+    <a href="#contact" class="btn btn-yellow">Hire Me</a>
+  </div>
+</section> -->
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 fade-up">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title mb-4">Let's Work Together</h2>
+        <p style="color:#777;font-size:.9rem;line-height:1.9;margin-bottom:28px;">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of something great. Feel free to reach out!
+        </p>
+        <div class="contact-detail">
+          <span>Location</span>
+          <span>Chennai, India</span>
+        </div>
+        <div class="contact-detail">
+          <span>Email</span>
+          <span>rajamanickam.dev@gmail.com</span>
+        </div>
+        <div class="contact-detail">
+          <span>Phone</span>
+          <span>+91 99659 14107</span>
+        </div>
+        <div class="social-links mt-3">
+          <a href="mailto:rajamanickam.dev@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/rajamanickamraju" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
+        </div>
+      </div>
+      <div class="col-lg-7 mt-5 mt-lg-0 fade-up" style="transition-delay:.2s">
+        <span class="section-label">Send a Message</span>
+        <h2 class="section-title mb-4">Drop Me a Line</h2>
+        <div class="row g-3" id="contactForm">
+          <div class="col-md-6">
+            <label class="form-label">Your Full Name <span class="text-danger">*</span></label>
+            <input type="text" id="cf-name" class="form-control" placeholder="Your Name" autocomplete="off"/>
+            <div class="cf-error" id="err-name">Please enter your full name.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Your Email Address <span class="text-danger">*</span></label>
+            <input type="email" id="cf-email" class="form-control" placeholder="your@email.com" autocomplete="off"/>
+            <div class="cf-error" id="err-email">Please enter a valid email address.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Your Phone <span class="text-danger">*</span></label>
+            <input type="tel" id="cf-phone" class="form-control" placeholder="+91 00000 00000" autocomplete="off"/>
+            <div class="cf-error" id="err-phone">Please enter a valid phone number (min 10 digits).</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Subject <span class="text-danger">*</span></label>
+            <input type="text" id="cf-subject" class="form-control" placeholder="Project Inquiry" autocomplete="off"/>
+            <div class="cf-error" id="err-subject">Please enter a subject.</div>
+          </div>
+          <div class="col-12">
+            <label class="form-label">Your Message <span class="text-danger">*</span></label>
+            <textarea id="cf-message" class="form-control" rows="4" placeholder="Tell me about your project..."></textarea>
+            <div class="cf-error" id="err-message">Please enter your message (at least 20 characters).</div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-yellow" id="sendBtn">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+            <div id="cf-success" class="cf-success-msg" style="display:none;">
+              <i class="fas fa-check-circle me-2"></i>Your message has been sent! I'll get back to you soon.
+            </div>
+            <div id="cf-fail" class="cf-fail-msg" style="display:none;">
+              <i class="fas fa-exclamation-circle me-2"></i>Something went wrong. Please try again or email directly.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <span>Copyright &copy; 2026 Rajamanickam R. All Rights Reserved.</span>
+      <span>Senior Front-End Developer | Chennai, India</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════ SCRIPTS ══════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/custome.js"></script> 
+</body>
+</html>
