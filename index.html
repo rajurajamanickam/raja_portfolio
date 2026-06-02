@@ -117,7 +117,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 text-center fade-up" style="transition-delay:.15s">
+      <div class="col-lg-4 text-center fade-up mt-5 pt-5" style="transition-delay:.15s">
         <div class="about-stat-num"><span class="counter" data-target="15">0</span>+</div>
         <div class="about-stat-label mt-1">Years of Experience</div>
       </div>
@@ -186,78 +186,145 @@
       <span class="section-label">Resume</span>
       <h2 class="section-title">A Summary of My Resume</h2>
     </div>
-    <div class="row">
-      <!-- Education -->
-      <div class="col-md-6 fade-up">
-        <span class="resume-col-title">My Education</span>
-        <div class="resume-item">
-          <span class="resume-date">Vel Multi Tech SRS Engineering College | 2005 – 2008</span>
-          <h5>Master of Computer Applications (MCA)</h5>
-          <p class="company">Chennai, India</p>
-          <p>First Class — 74%. Specialised in software engineering, data structures, and application development.</p>
+
+    <!-- ── Tab switcher ── -->
+    <div class="rv2-tabs fade-up">
+      <button class="rv2-tab active" data-tab="experience"><i class="fas fa-briefcase me-2"></i>Experience</button>
+      <button class="rv2-tab" data-tab="education"><i class="fas fa-graduation-cap me-2"></i>Education</button>
+      <button class="rv2-tab" data-tab="skills"><i class="fas fa-code me-2"></i>Skills</button>
+    </div>
+
+    <!-- ── EXPERIENCE PANEL ── -->
+    <div class="rv2-panel active" id="rv2-experience">
+      <div class="rv2-timeline">
+
+        <div class="rv2-tl-item fade-up">
+          <div class="rv2-tl-dot">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="rv2-tl-content">
+            <div class="rv2-tl-header">
+              <div>
+                <h5 class="rv2-tl-title">Senior UI Developer</h5>
+                <span class="rv2-tl-company"><i class="fas fa-building me-1"></i>Fint Solutions Pvt. Ltd.</span>
+              </div>
+              <span class="rv2-tl-badge current">Sep 2021 – Present</span>
+            </div>
+            <p class="rv2-tl-desc">Led Angular 16 modernisation, upgraded legacy Angular 8 app improving rendering by <strong>30%</strong>, designed reusable components reducing duplicate code by <strong>40%</strong>, and mentored junior developers.</p>
+            <div class="rv2-tags">
+              <span>Angular 16</span><span>TypeScript</span><span>CI/CD</span><span>Snyk</span><span>PrimeNG</span>
+            </div>
+          </div>
         </div>
-        <div class="resume-item">
-          <span class="resume-date">K.S.R College of Technology | 2002 – 2005</span>
-          <h5>B.Sc. Information Technology</h5>
-          <p class="company">Tiruchengode, India</p>
-          <p>First Class — 69%. Built a strong foundation in computer science, networking, and programming fundamentals.</p>
+
+        <div class="rv2-tl-item fade-up" style="transition-delay:.1s">
+          <div class="rv2-tl-dot">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="rv2-tl-content">
+            <div class="rv2-tl-header">
+              <div>
+                <h5 class="rv2-tl-title">Asst. Manager - Creative</h5>
+                <span class="rv2-tl-company"><i class="fas fa-building me-1"></i>Sify Technologies Pvt. Ltd.</span>
+              </div>
+              <span class="rv2-tl-badge">May 2013 - Sep 2021</span>
+            </div>
+            <p class="rv2-tl-desc">Developed the Digital Sales Portal with Angular 10 + Node.js, delivered <strong>3 Ionic mobile apps</strong> with 50K+ downloads &amp; 4.5+ ratings, and improved app performance by <strong>45%</strong>.</p>
+            <div class="rv2-tags">
+              <span>Angular 10</span><span>Node.js</span><span>Ionic</span><span>Figma</span><span>MongoDB</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Experience -->
-      <div class="col-md-6 fade-up" style="transition-delay:.15s">
-        <span class="resume-col-title">My Experience</span>
-        <div class="resume-item">
-          <span class="resume-date">Fint Solutions Pvt. Ltd. | Sep 2021 – Present</span>
-          <h5>Senior UI Developer</h5>
-          <p class="company">Chennai, India</p>
-          <p>Led Angular 16 modernisation, upgraded legacy Angular 8 app improving rendering by 30%, designed reusable components reducing duplicate code by 40%, and mentored junior developers.</p>
+
+        <div class="rv2-tl-item fade-up" style="transition-delay:.2s">
+          <div class="rv2-tl-dot">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="rv2-tl-content">
+            <div class="rv2-tl-header">
+              <div>
+                <h5 class="rv2-tl-title">Web Designer / Front-End Developer</h5>
+                <span class="rv2-tl-company"><i class="fas fa-building me-1"></i>FHAPL Technologies</span>
+              </div>
+              <span class="rv2-tl-badge">Dec 2007 - Apr 2013</span>
+            </div>
+            <p class="rv2-tl-desc">Delivered responsive, SEO-friendly websites using HTML5, CSS3, JavaScript, and jQuery. Improved page load speed by <strong>20%</strong> through CSS refactoring and image optimisation.</p>
+            <div class="rv2-tags">
+              <span>HTML5</span><span>CSS3</span><span>jQuery</span><span>WordPress</span><span>Photoshop</span>
+            </div>
+          </div>
         </div>
-        <div class="resume-item">
-          <span class="resume-date">Sify Technologies Pvt. Ltd. | May 2013 - Aug 2021</span>
-          <h5>Assistant Manager - Creative (UI Development)</h5>
-          <p class="company">Chennai, India</p>
-          <p>Developed the Digital Sales Portal using Angular 10 + Node.js, delivered 3 Ionic mobile apps with 50K+ downloads and 4.5+ ratings, and improved app performance by 45%.</p>
-        </div>
-        <!-- <div class="resume-item">
-          <span class="resume-date">FHAPL Technologies | Dec 2010 – May 2013</span>
-          <h5>Web Designer / Front-End Developer</h5>
-          <p class="company">Chennai, India</p>
-          <p>Delivered responsive, SEO-friendly websites using HTML5, CSS3, JavaScript, and jQuery. Improved page load speed by 20% through CSS refactoring and image optimisation.</p>
-        </div> -->
+
       </div>
     </div>
 
-    <!-- Skills -->
-    <div class="row mt-5 fade-up">
-      <h4 class="mb-4" style="font-size:1.2rem;letter-spacing:1px;text-transform:uppercase;">My Skills</h4>
-      <div class="col-md-6">
-        <div class="skill-label"><span>Angular</span><span>95%</span></div>
-        <div class="progress"><div class="progress-bar" data-width="95" style="width:0"></div></div>
-        <div class="skill-label"><span>TypeScript / JavaScript</span><span>92%</span></div>
-        <div class="progress"><div class="progress-bar" data-width="92" style="width:0"></div></div>
-        <div class="skill-label"><span>HTML5 &amp; CSS3 / SASS</span><span>95%</span></div>
-        <div class="progress"><div class="progress-bar" data-width="95" style="width:0"></div></div>
-        <div class="skill-label"><span>React</span><span>80%</span></div>
-        <div class="progress"><div class="progress-bar" data-width="80" style="width:0"></div></div>
+    <!-- ── EDUCATION PANEL ── -->
+    <div class="rv2-panel" id="rv2-education">
+      <div class="rv2-edu-grid">
+
+        <div class="rv2-edu-card fade-up">
+          <div class="rv2-edu-icon"><i class="fas fa-university"></i></div>
+          <div class="rv2-edu-body">
+            <span class="rv2-edu-date">2005 - 2008</span>
+            <h5>Master of Computer Applications</h5>
+            <p class="rv2-edu-inst">Vel Multi Tech SRS Engineering College, Chennai</p>
+            <div class="rv2-edu-grade">
+              <span class="rv2-grade-pill">First Class</span>
+              <span class="rv2-grade-pill accent">74%</span>
+            </div>
+            <p class="rv2-edu-desc">Specialised in software engineering, data structures, and application development.</p>
+          </div>
+        </div>
+
+        <div class="rv2-edu-card fade-up" style="transition-delay:.15s">
+          <div class="rv2-edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="rv2-edu-body">
+            <span class="rv2-edu-date">Up to April 2005</span>
+            <h5>B.Sc. Information Technology</h5>
+            <p class="rv2-edu-inst">K.S.R College of Technology, Tiruchengode</p>
+            <div class="rv2-edu-grade">
+              <span class="rv2-grade-pill">First Class</span>
+              <span class="rv2-grade-pill accent">69%</span>
+            </div>
+            <p class="rv2-edu-desc">Built a strong foundation in computer science, networking, and programming fundamentals.</p>
+          </div>
+        </div>
+
       </div>
-      <div class="col-md-6">
-        <div class="skill-label"><span>Figma / Adobe XD / UI Design</span><span>88%</span></div>
-        <div class="progress"><div class="progress-bar" data-width="88" style="width:0"></div></div>
-        <div class="skill-label"><span>Azure DevOps / Jenkins CI/CD</span><span>82%</span></div>
-        <div class="progress"><div class="progress-bar" data-width="82" style="width:0"></div></div>
-        <div class="skill-label"><span>Bootstrap / Material UI / PrimeNG</span><span>90%</span></div>
-        <div class="progress"><div class="progress-bar" data-width="90" style="width:0"></div></div>
-        <div class="skill-label"><span>Accessibility (WCAG / ARIA)</span><span>85%</span></div>
-        <div class="progress"><div class="progress-bar" data-width="85" style="width:0"></div></div>
+    </div>
+
+    <!-- ── SKILLS PANEL ── -->
+    <div class="rv2-panel" id="rv2-skills">
+      <div class="rv2-skills-wrap fade-up">
+
+        <div class="rv2-skill-group">
+          <h6 class="rv2-skill-group-title"><i class="fas fa-layer-group me-2"></i>Frontend Frameworks</h6>
+          <div class="rv2-skill-bars">
+            <div class="rv2-bar-row"><span class="rv2-bar-label">Angular</span><div class="rv2-bar-track"><div class="rv2-bar-fill" data-w="95"></div></div><span class="rv2-bar-pct">95%</span></div>
+            <div class="rv2-bar-row"><span class="rv2-bar-label">TypeScript / JavaScript</span><div class="rv2-bar-track"><div class="rv2-bar-fill" data-w="92"></div></div><span class="rv2-bar-pct">92%</span></div>
+            <div class="rv2-bar-row"><span class="rv2-bar-label">React</span><div class="rv2-bar-track"><div class="rv2-bar-fill" data-w="80"></div></div><span class="rv2-bar-pct">80%</span></div>
+            <div class="rv2-bar-row"><span class="rv2-bar-label">HTML5 &amp; CSS3 / SASS</span><div class="rv2-bar-track"><div class="rv2-bar-fill" data-w="95"></div></div><span class="rv2-bar-pct">95%</span></div>
+          </div>
+        </div>
+
+        <div class="rv2-skill-group">
+          <h6 class="rv2-skill-group-title"><i class="fas fa-paint-brush me-2"></i>Design &amp; UI Libraries</h6>
+          <div class="rv2-skill-bars">
+            <div class="rv2-bar-row"><span class="rv2-bar-label">Figma / Adobe XD</span><div class="rv2-bar-track"><div class="rv2-bar-fill" data-w="88"></div></div><span class="rv2-bar-pct">88%</span></div>
+            <div class="rv2-bar-row"><span class="rv2-bar-label">Bootstrap / Material UI / PrimeNG</span><div class="rv2-bar-track"><div class="rv2-bar-fill" data-w="90"></div></div><span class="rv2-bar-pct">90%</span></div>
+            <div class="rv2-bar-row"><span class="rv2-bar-label">Accessibility (WCAG / ARIA)</span><div class="rv2-bar-track"><div class="rv2-bar-fill" data-w="85"></div></div><span class="rv2-bar-pct">85%</span></div>
+            <div class="rv2-bar-row"><span class="rv2-bar-label">Azure DevOps / Jenkins CI/CD</span><div class="rv2-bar-track"><div class="rv2-bar-fill" data-w="82"></div></div><span class="rv2-bar-pct">82%</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <div class="download-cv-wrap fade-up">
-      <a href="assets/RajaManickam_15Yrs_FrontEnd.pdf" target="_blank" class="btn btn-yellow"> Download CV <i class="fas fa-download ms-2"></i> </a>
+      <a href="assets/RajaManickam_15Yrs_UIDeveloper.pdf" target="_blank" class="btn btn-yellow"> Download CV <i class="fas fa-download ms-2"></i> </a>
     </div>
   </div>
-</section>
-
+</section>  
 <!-- ══════════ ACHIEVEMENTS ══════════ -->
 <section id="achievements">
   <div class="container">
