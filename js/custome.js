@@ -210,3 +210,24 @@ $(function () {
   }
   setTimeout(type, 600);
 })();
+
+(function(){
+  // Tab switching
+  document.querySelectorAll('.rv2-tab').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.rv2-tab').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.rv2-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById('rv2-' + btn.dataset.tab);
+      if(panel){ panel.classList.add('active'); }
+      // Animate skill bars when skills tab opens
+      if(btn.dataset.tab === 'skills'){
+        setTimeout(function(){
+          document.querySelectorAll('.rv2-bar-fill').forEach(function(bar){
+            bar.style.width = bar.dataset.w + '%';
+          });
+        }, 80);
+      }
+    });
+  });
+})();
