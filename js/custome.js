@@ -228,3 +228,35 @@ $(function () {
     });
   });
 })();
+const btn = document.getElementById("downloadCV");
+const text = document.getElementById("btnText");
+btn.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (btn.classList.contains("loading")) return;
+
+    btn.classList.add("loading");
+
+    let progress = 0;
+
+    const timer = setInterval(() => {
+        progress += 1;
+        text.textContent = `Downloading ${progress}%`;
+
+        if (progress >= 100) {
+            clearInterval(timer);
+
+            const link = document.createElement("a");
+            link.href = "assets/RajaManickam_15Yrs_UIUXDeveloper.pdf";
+            link.download = "RajaManickam_15Yrs_UIUXDeveloper.pdf";
+            link.click();
+
+            text.textContent = "Downloaded ✓";
+
+            setTimeout(() => {
+                text.textContent = "Download CV";
+                btn.classList.remove("loading");
+            }, 2000);
+        }
+    }, 20); // speed
+});
