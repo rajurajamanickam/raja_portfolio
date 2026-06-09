@@ -1,17 +1,15 @@
-$(function () {
-    $("#downloadCV").on("click", function (e) {
+$(function () { 
+    $("#downloadCV").click(function (e) {
         e.preventDefault();
 
-        const fileUrl = "assets/Rajamanickam_Resume.pdf";
-
         const link = document.createElement("a");
-        link.href = fileUrl;
-        link.download = "Rajamanickam_Resume.pdf";
+        link.href = "assets/RajaManickam_15Yrs_UIUXDeveloper.pdf";
+        link.download = "assets/RajaManickam_15Yrs_UIUXDeveloper.pdf";
 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    });
+    }); 
   /* ── Navbar scroll effect ── */
   $(window).on('scroll', function () {
     $('#mainNav').toggleClass('scrolled', $(this).scrollTop() > 50);
