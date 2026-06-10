@@ -1,14 +1,4 @@
-$(function () { 
-  /* ── Download ── */
-  $("#downloadCV").click(function (e) {
-      e.preventDefault();
-      const link = document.createElement("a");
-      link.href = "assets/RajaManickam_15Yrs_UIUXDeveloper.pdf";
-      link.download = "RajaManickam_15Yrs_UIUXDeveloper.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-  }); 
+$(function () {  
   /* ── Navbar scroll effect ── */
   $(window).on('scroll', function () {
     $('#mainNav').toggleClass('scrolled', $(this).scrollTop() > 50);
